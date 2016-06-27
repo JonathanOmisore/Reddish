@@ -9,7 +9,7 @@ for item in items:
     if item == '':
         items.remove(item)
 file.close()
-r = praw.Reddit("oh hi")
+r = praw.Reddit("User Agent 007")
 
 
 for item in items:
