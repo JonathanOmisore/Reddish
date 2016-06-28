@@ -21,6 +21,7 @@ for item in items:
         try:
             for submission in subreddit.get_hot(limit=10):
                 print(submission.title + "\n" + submission.url + "\n" + submission.permalink + "\n" + submission.selftext + "\n" + seperate() )
+                enter = input("Press any key to continue")
         except praw.errors.InvalidSubreddit:
              print(str(subreddit) + " is private or does not exist")
             
