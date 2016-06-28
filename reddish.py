@@ -19,13 +19,9 @@ for item in items:
     enter = input("")
     
 
-        try:
-            for submission in subreddit.get_hot(limit=5):
-                print(submission.title + "\n" + submission.url + "\n" + submission.permalink + "\n" + submission.selftext + "\n" + seperate() )
+    try:
+        for submission in subreddit.get_hot(limit=5):
+            print(submission.title + "\n" + submission.url + "\n" + submission.permalink + "\n" + submission.selftext + "\n" + seperate() + "\n")
                 
-        except praw.errors.InvalidSubreddit:
-             print(str(subreddit) + " is private or does not exist")
-            
-        
-    
-    
+    except praw.errors.InvalidSubreddit:
+            print(str(subreddit) + " is private or does not exist")
