@@ -9,7 +9,7 @@ Requirements:
 
 Usage:
 
-1. Enter subreddits in subreddits.txt (line superated)
+1. Enter subreddit names in subreddits.txt, line seperated. There are already 3 subreddits by default to serve as an example.
 2. Run the command "python Reddish/reddish.py
 3. Press enter to get posts from the next subreddit
 
