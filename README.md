@@ -1,6 +1,6 @@
 #Reddish
 
-Reddish is a tool that allows you to read the current top posts from your favorite subreddits - straight from your command line. Useful for redditing while coding.
+Reddish is a tool that allows you to read the current top posts of your favorite subreddits - straight from your command line. Useful for redditing while coding.
 Requirements:
 
 * Python 3
