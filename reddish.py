@@ -11,17 +11,19 @@ for item in items:
 file.close()
 r = praw.Reddit("User Agent 007")
 
-
-for item in items:
+def run():
     
-    print(item + ":\n")
-    subreddit = r.get_subreddit(item)
-    enter = input("")
+    for item in items:
+    
+        print(item + ":\n")
+        subreddit = r.get_subreddit(item)
+        enter = input("")
     
 
-    try:
-        for submission in subreddit.get_hot(limit=5):
-            print(submission.title + "\n" + submission.url + "\n" + submission.permalink + "\n" + submission.selftext + "\n" + seperate() + "\n")
+        try:
+            for submission in subreddit.get_hot(limit=5):
+                print(submission.title + "\n" + submission.url + "\n" + submission.permalink + "\n" + submission.selftext + "\n" + seperate() + "\n")
                 
-    except praw.errors.InvalidSubreddit:
-            print(str(subreddit) + " is private or does not exist")
+        except praw.errors.InvalidSubreddit:
+                print(str(subreddit) + " is private or does not exist")
+run()
