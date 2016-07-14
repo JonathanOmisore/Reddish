@@ -1,4 +1,5 @@
 import praw
+global items, r
 def seperate():
     seperator = '=' * 60
     return seperator
@@ -12,7 +13,7 @@ file.close()
 r = praw.Reddit("User Agent 007")
 
 def run():
-    
+    global items, r
     for item in items:
     
         print(item + ":\n")
